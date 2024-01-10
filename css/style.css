@@ -19,7 +19,15 @@ p {
 #center{
     text-align: center;
 }
-    /* Centered is <div id="centered"> */
+    /* Center is <div id="center"> */
+
+#left{
+    text-align: left;
+}
+
+#right{
+    text-align: right;
+}
 
 .box{
     background-image: url(../img/orangecat.jpeg);
