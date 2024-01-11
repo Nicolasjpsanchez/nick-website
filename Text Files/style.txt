@@ -1,0 +1,151 @@
+/* Header styling */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation container styling */
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: #444;
+}
+
+/* Shared styles for buttons */
+.home-button, .button {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.1s;
+}
+
+/* Hover effect for buttons */
+.home-button:hover, .button:hover {
+    background-color: #45a049;
+}
+
+/* Click effect for buttons */
+.home-button:active, .button:active {
+    background-color: #39803f;
+    transform: scale(0.98);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .home-button, .button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Personal info styling */
+.personal-info {
+    background-color: #e2e2e2;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Image styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%; /* Circular image */
+}
+
+.highlight {
+    background: yellow; /* Highlight class */
+}
+
+#center {
+    text-align: center;
+}
+
+.box {
+    background-image: url(../img/orangecat.jpeg);
+    padding: 200px;
+    margin: 100px;
+    background-size: cover;
+    background-position: top;
+}
+
+/* Container for the buttons (if used) */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Specific styles for home-button */
+.home-button {
+    padding: 10px 20px;
+}
+
+/* Specific styles for button */
+.button {
+    padding: 15px 32px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Dropdown Button */
+.dropdown-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropdown-btn:hover, .dropdown-btn:focus {
+    background-color: #3e8e41;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none; /* Initially hidden */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Additional CSS for 'show' class */
+.show {
+    display: block;
+}
+
+/* Styles for dropdown button when it's in 'close' state */
+.dropdown-btn-close {
+    background-color: #D9534F; /* Red color for 'close' indication */
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-btn-close:hover, .dropdown-btn-close:focus {
+    background-color: #C9302C; /* Darker shade of red for hover/focus */
+}
