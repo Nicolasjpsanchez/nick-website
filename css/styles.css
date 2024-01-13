@@ -16,24 +16,29 @@ header{
 }
 
 .container{
+    width: 80%;
     margin: 0 auto;
-    text-align: left;
+
 }
 
 section{
+    float: left;
     width: 70%;
     margin-bottom: 100px;
-    text-align: middle;
-    margin-left: auto;
-    margin-right: auto;
+
+}
+
+aside{
+    float: right;
+    width: 25%;
+    margin-bottom: 100px;
 }
 
 footer{
+    clear: both;
     background-color: #7286a0;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
     text-align: center;
-    margin: 0px;
 }
 
 a:link, a:visited {
@@ -52,55 +57,6 @@ a:link, a:visited {
 a:hover {
     color: whitesmoke;
     background-color: darkgreen;
-}
-
-.container {
-    margin: 0 auto;
-    width: 80%; /* Adjust this width as needed */
-}
-
-.image-container {
-    width: 600px;  /* Width of the container */
-    height: 400px; /* Height of the container */
-    overflow: hidden; /* Ensures nothing extends outside the container */
-    margin: auto; /* Center the container */
-}
-
-.image-container img {
-    width: 100%;    /* Make image fill the container width */
-    height: 100%;   /* Make image fill the container height */
-    object-fit: cover; /* Resize the image to cover the container */
-    object-position: center; /* Align the image centrally */
-}
-
-aside{
-    float: right;
-    width: 50%;
-    margin-bottom: 100px;
-    list-style: none;
-}
-
-section-recipe{
-    float: left;
-    width: 50%;
-    margin-bottom: 100px;   
-    text-align: center; 
-    list-style: none;
-}
-
-ul li{
-    list-style: none;
-
-}
-
-footer{
-    clear: both;
-    background-color: #7286a0;
-    padding: 50px 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 200px
 }
 
 .nav-list{

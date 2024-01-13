@@ -1,7 +1,0 @@
-Dropdown Button:
-
-<button class="dropdown-btn">Menu</button>
-
- Home Button:
- 
- <a href="index.html" class="home-button">Home</a>
