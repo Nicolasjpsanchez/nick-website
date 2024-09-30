@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Nicolas Sanchez">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YNFRL930LE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YNFRL930LE');
+</script>
+<body>
+    <a href="../index.html" class="back-button">Back</a> <!-- Back Button -->
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+        <form id="contactForm" action="https://formspree.io/f/xldrqoao" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        <p>Copyright © nickcodedesigns, LLC 2024. All rights reserved.</p>
+        <p><a href="/pages/sitemap.html">Sitemap</a></p>
+    </footer>
+</body>
+</html>

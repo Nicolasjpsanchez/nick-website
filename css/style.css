@@ -1,120 +1,291 @@
-body{
-    background-color: #CDE7B0;
-    font-family: Papyrus,fantasy;
-    font-size: 18px;
-    margin: 0px;
-}
-
-header{
-    background-color: #59594a;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    margin-bottom: 100px;
-}
-
-.container{
-    margin: 0 auto;
-    text-align: left;
-}
-
-section{
-    width: 70%;
-    margin-bottom: 100px;
-    text-align: middle;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-footer{
-    background-color: #7286a0;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    margin: 0px;
-}
-
-a:link, a:visited {
-    color: white; /* Choose your desired link color */
-    text-decoration: none;
-    background-color: green; /* Remove specific background colors */
-    font-weight: normal; /* Standardize font weight */
-    font-style: normal; /* Standardize font style */
-    text-transform: none; /* Standardize text transform */
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Hover effect */
-a:hover {
-    color: whitesmoke;
-    background-color: darkgreen;
-}
-
-.container {
-    margin: 0 auto;
-    width: 80%; /* Adjust this width as needed */
-}
-
-.image-container {
-    width: 600px;  /* Width of the container */
-    height: 400px; /* Height of the container */
-    overflow: hidden; /* Ensures nothing extends outside the container */
-    margin: auto; /* Center the container */
-}
-
-.image-container img {
-    width: 100%;    /* Make image fill the container width */
-    height: 100%;   /* Make image fill the container height */
-    object-fit: cover; /* Resize the image to cover the container */
-    object-position: center; /* Align the image centrally */
-}
-
-aside{
-    float: right;
-    width: 50%;
-    margin-bottom: 100px;
-    list-style: none;
-}
-
-section-recipe{
-    float: left;
-    width: 50%;
-    margin-bottom: 100px;   
-    text-align: center; 
-    list-style: none;
-}
-
-ul li{
-    list-style: none;
-
-}
-
-footer{
-    clear: both;
-    background-color: #7286a0;
-    padding: 50px 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 200px
-}
-
-.nav-list{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+/* Basic reset for margins and padding */
+* {
+    margin: 0;
     padding: 0;
-    gap: 1rem;
-    list-style: none;
-    justify-content: center;
-
+    box-sizing: border-box;
 }
 
-.nav-list{
-    flex-grow: 1;
-    flex-shrink: 1;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Set the body background color */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/images/background.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Spread items evenly */
+    align-items: center; /* Center items vertically */
+    list-style: none;
+    margin: 0; /* Ensure no margin */
+    padding: 10px 0; /* Added vertical padding for aesthetics */
+    width: 100%; /* Ensure full width */
+}
+
+nav ul li {
+    flex-grow: 1; /* Forces each item to take equal space */
+    text-align: center; /* Center-align the text */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px; /* Padding for links */
+    font-weight: bold;
+    display: block; /* Make links block elements */
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative; /* Ensure stacking context */
+    z-index: 1; /* Keep above the background */
+    margin-top: 60px; /* Create space for the fixed nav */
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto; /* Center the main content */
+    background-color: rgba(255, 255, 255, 0.9); /* White background for main content */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0; /* Keep existing padding */
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    width: 100%;
+    margin-top: 20px; /* Add margin-top to create space above the footer */
+}
+
+/* Box styling for sections */
+.box {
+    background-color: white; /* White background for boxes */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the boxes */
+    margin-bottom: 20px; /* Space between boxes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Job section styling */
+.job {
+    margin-bottom: 15px; /* Space between jobs */
+}
+
+/* Home button styling */
+.home-button {
+    display: block; /* Change to block for centering */
+    margin: 20px auto; /* Center horizontally with auto margins */
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #333; /* Button background */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+    text-align: center; /* Center text within the button */
+    max-width: 200px; /* Limit width of the button */
+}
+
+.home-button:hover {
+    background-color: #555; /* Change background on hover */
+}
+
+/* Contact container styling */
+.contact-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px; /* Set a max width */
+    width: 100%; /* Allow it to take full width until max-width */
+    margin: 80px auto; /* Center the container and ensure space for the back button */
+    background-color: rgba(255, 255, 255, 0.9); /* White background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+/* Adjusting form elements for better appearance */
+label {
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Bold labels */
+}
+
+input,
+textarea {
+    padding: 10px; /* Padding for text boxes */
+    margin-bottom: 20px; /* Space between elements */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    resize: none; /* Disable textarea resizing */
+}
+
+button {
+    background-color: #333; /* Button background */
+    color: white; /* Text color */
+    padding: 10px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #555; /* Change background on hover */
+}
+
+/* Style for all lists */
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0; /* Remove left padding */
+}
+
+li {
+    margin-bottom: 5px; /* Add some space between list items */
+    font-size: 1em; /* Ensure consistent font size */
+    line-height: 1.5; /* Set line height for consistency */
+    position: relative; /* Position for custom bullet */
+    padding-left: 1.5em; /* Indent with padding */
+}
+
+/* Custom bullet points */
+li::before {
+    content: '•'; /* Add a custom bullet */
+    position: absolute; /* Position absolutely */
+    left: 0; /* Align left */
+    color: #333; /* Bullet color */
+    font-size: 1em; /* Set bullet size */
+    line-height: 1.5; /* Set line height for the bullet */
+}
+
+/* Back button styling */
+.back-button {
+    position: fixed; /* Position it fixed */
+    top: 20px; /* Space from the top */
+    left: 20px; /* Space from the left */
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #333; /* Button background */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.back-button:hover {
+    background-color: #555; /* Change background on hover */
+}
+
+/* Center the heading in the contact container */
+.contact-container h1 {
+    text-align: center; /* Center the text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: center; /* Center items for smaller screens */
+        flex-wrap: wrap; /* Allow items to wrap, making them closer together */
+    }
+
+    nav ul li {
+        flex: 0 1 auto; /* Allow items to shrink but keep them in one row */
+    }
+
+    header {
+        padding: 40px 20px; /* Adjust padding */
+        margin-top: 60px; /* Maintain space for the fixed nav */
+    }
+
+    main {
+        margin-top: 20px; /* Reset margin for main content */
+    }
+
+    .contact-container {
+        padding: 10px; /* Adjust padding for smaller screens */
+        max-width: 100%; /* Allow full width on small screens */
+    }
+
+    input,
+    textarea {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button size on smaller screens */
+    }
+}
+
+.box.introduction {
+    margin-top: 20px; /* Adjust the value as needed */
+}
+
+.box.introduction {
+    padding-top: 20px; /* Adjust the value as needed */
+}
+header {
+    padding: 30px 20px; /* Adjust the vertical padding */
+}
+
+header {
+    margin-bottom: 20px; /* Adjust the value as needed for desired spacing */
+}
+footer {
+    background-color: #333; /* Background color of the footer */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Center the text */
+}
+
+footer a {
+    color: #ffcc00; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    padding: 5px 10px; /* Padding around the link */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+footer a:hover {
+    background-color: rgba(255, 204, 0, 0.2); /* Light background on hover */
 }
