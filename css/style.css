@@ -28,46 +28,53 @@ nav {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    margin-bottom: 20px; /* Add space below the nav */
 }
 
 nav ul {
     display: flex; /* Use Flexbox for layout */
-    justify-content: space-between; /* Spread items evenly */
+    justify-content: center; /* Center the items */
     align-items: center; /* Center items vertically */
-    list-style: none;
+    list-style-type: none; /* Remove bullet points */
     margin: 0; /* Ensure no margin */
     padding: 10px 0; /* Added vertical padding for aesthetics */
     width: 100%; /* Ensure full width */
 }
 
 nav ul li {
-    flex-grow: 1; /* Forces each item to take equal space */
-    text-align: center; /* Center-align the text */
+    margin: 0 5px; /* Reduce space between links */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 15px; /* Padding for links */
+    padding: 2px 8px; /* Reduced padding for smaller buttons */
     font-weight: bold;
     display: block; /* Make links block elements */
     transition: background-color 0.3s;
+    font-size: 14px; /* Set font size */
 }
 
 nav ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
+    background-color: #555; /* Change background on hover */
+    border-radius: 5px; /* Rounded corners */
 }
 
 /* Header styling */
 header {
     background-color: rgba(51, 51, 51, 0.8);
     color: #fff;
-    padding: 60px 20px;
+    padding: 20px 30px; /* Adjust padding for more space around the text */
     text-align: center;
     position: relative; /* Ensure stacking context */
     z-index: 1; /* Keep above the background */
     margin-top: 60px; /* Create space for the fixed nav */
+    border-radius: 15px; /* Add rounded corners */
+    max-width: 500px; /* Set a maximum width */
+    margin-left: auto; /* Center the header */
+    margin-right: auto; /* Center the header */
 }
 
 /* Main content styling */
@@ -84,199 +91,14 @@ main {
 /* Footer styling */
 footer {
     text-align: center;
-    padding: 10px 0; /* Keep existing padding */
+    padding: 20px 0; /* Adjust padding for the footer */
     background-color: rgba(51, 51, 51, 0.8);
     color: white;
     width: 100%;
-    margin-top: 20px; /* Add margin-top to create space above the footer */
+    margin-top: 20px; /* Space above the footer */
 }
 
-/* Box styling for sections */
-.box {
-    background-color: white; /* White background for boxes */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding inside the boxes */
-    margin-bottom: 20px; /* Space between boxes */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-/* Job section styling */
-.job {
-    margin-bottom: 15px; /* Space between jobs */
-}
-
-/* Home button styling */
-.home-button {
-    display: block; /* Change to block for centering */
-    margin: 20px auto; /* Center horizontally with auto margins */
-    padding: 10px 15px; /* Padding for the button */
-    background-color: #333; /* Button background */
-    color: #fff; /* Text color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth transition */
-    text-align: center; /* Center text within the button */
-    max-width: 200px; /* Limit width of the button */
-}
-
-.home-button:hover {
-    background-color: #555; /* Change background on hover */
-}
-
-/* Contact container styling */
-.contact-container {
-    flex: 1;
-    padding: 20px;
-    max-width: 600px; /* Set a max width */
-    width: 100%; /* Allow it to take full width until max-width */
-    margin: 80px auto; /* Center the container and ensure space for the back button */
-    background-color: rgba(255, 255, 255, 0.9); /* White background for the container */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-/* Form styling */
-form {
-    display: flex;
-    flex-direction: column; /* Stack form elements vertically */
-}
-
-/* Adjusting form elements for better appearance */
-label {
-    margin-bottom: 5px; /* Space between label and input */
-    font-weight: bold; /* Bold labels */
-}
-
-input,
-textarea {
-    padding: 10px; /* Padding for text boxes */
-    margin-bottom: 20px; /* Space between elements */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    resize: none; /* Disable textarea resizing */
-}
-
-button {
-    background-color: #333; /* Button background */
-    color: white; /* Text color */
-    padding: 10px; /* Padding for the button */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s; /* Smooth transition */
-}
-
-button:hover {
-    background-color: #555; /* Change background on hover */
-}
-
-/* Style for all lists */
-ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding-left: 0; /* Remove left padding */
-}
-
-li {
-    margin-bottom: 5px; /* Add some space between list items */
-    font-size: 1em; /* Ensure consistent font size */
-    line-height: 1.5; /* Set line height for consistency */
-    position: relative; /* Position for custom bullet */
-    padding-left: 1.5em; /* Indent with padding */
-}
-
-/* Custom bullet points */
-li::before {
-    content: '•'; /* Add a custom bullet */
-    position: absolute; /* Position absolutely */
-    left: 0; /* Align left */
-    color: #333; /* Bullet color */
-    font-size: 1em; /* Set bullet size */
-    line-height: 1.5; /* Set line height for the bullet */
-}
-
-/* Back button styling */
-.back-button {
-    position: fixed; /* Position it fixed */
-    top: 20px; /* Space from the top */
-    left: 20px; /* Space from the left */
-    padding: 10px 15px; /* Padding for the button */
-    background-color: #333; /* Button background */
-    color: #fff; /* Text color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth transition */
-    z-index: 1000; /* Ensure it stays above other content */
-}
-
-.back-button:hover {
-    background-color: #555; /* Change background on hover */
-}
-
-/* Center the heading in the contact container */
-.contact-container h1 {
-    text-align: center; /* Center the text */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    nav ul {
-        justify-content: center; /* Center items for smaller screens */
-        flex-wrap: wrap; /* Allow items to wrap, making them closer together */
-    }
-
-    nav ul li {
-        flex: 0 1 auto; /* Allow items to shrink but keep them in one row */
-    }
-
-    header {
-        padding: 40px 20px; /* Adjust padding */
-        margin-top: 60px; /* Maintain space for the fixed nav */
-    }
-
-    main {
-        margin-top: 20px; /* Reset margin for main content */
-    }
-
-    .contact-container {
-        padding: 10px; /* Adjust padding for smaller screens */
-        max-width: 100%; /* Allow full width on small screens */
-    }
-
-    input,
-    textarea {
-        font-size: 14px; /* Adjust font size */
-    }
-
-    button {
-        font-size: 14px; /* Adjust button size on smaller screens */
-    }
-}
-
-.box.introduction {
-    margin-top: 20px; /* Adjust the value as needed */
-}
-
-.box.introduction {
-    padding-top: 20px; /* Adjust the value as needed */
-}
-header {
-    padding: 30px 20px; /* Adjust the vertical padding */
-}
-
-header {
-    margin-bottom: 20px; /* Adjust the value as needed for desired spacing */
-}
-footer {
-    background-color: #333; /* Background color of the footer */
-    color: #fff; /* Text color */
-    padding: 20px; /* Padding around the footer */
-    text-align: center; /* Center the text */
-}
-
+/* Style for footer links */
 footer a {
     color: #ffcc00; /* Link color */
     text-decoration: none; /* Remove underline */
@@ -288,4 +110,60 @@ footer a {
 
 footer a:hover {
     background-color: rgba(255, 204, 0, 0.2); /* Light background on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: center; /* Center items for smaller screens */
+        flex-wrap: wrap; /* Allow items to wrap */
+    }
+}
+
+/* General text styling */
+h1, h2, h3, p {
+    margin-bottom: 20px; /* Add space below headers and paragraphs */
+    line-height: 1.5; /* Improve readability */
+}
+
+/* Improve button aesthetics */
+nav a {
+    margin: 0 5px; /* Decrease space between links */
+    padding: 8px 12px; /* Adjust padding for better appearance */
+    font-size: 1em; /* Standardize font size */
+    background-color: #444; /* Dark background for buttons */
+    color: #fff; /* White text */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+nav a:hover {
+    background-color: #666; /* Lighten on hover */
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family */
+    line-height: 1.6; /* Line height for readability */
+    color: #333; /* Text color */
+    font-size: 16px; /* Base font size */
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+main {
+    font-size: 16px; /* Override for main content if needed */
+}
+/* Assuming your title box has a class of .title-box */
+.title-box {
+    margin-bottom: 20px; /* Adjust this value for more or less space */
+}
+
+/* Alternatively, if you want to add margin to the About Me section */
+.about-me {
+    margin-top: 30px; /* Adjust this value for more or less space */
+}
+.about-me {
+    padding-top: 20px; /* Adds space above the About Me section */
 }
