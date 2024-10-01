@@ -91,7 +91,7 @@ main {
 /* Footer styling */
 footer {
     text-align: center;
-    padding: 20px 0; /* Adjust padding for the footer */
+    padding: 10px 0; /* Adjust padding for the footer */
     background-color: rgba(51, 51, 51, 0.8);
     color: white;
     width: 100%;
@@ -103,7 +103,7 @@ footer a {
     color: #ffcc00; /* Link color */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Bold text */
-    padding: 5px 10px; /* Padding around the link */
+    padding: 5px 5px; /* Padding around the link */
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s ease; /* Smooth transition */
 }
@@ -166,4 +166,175 @@ main {
 }
 .about-me {
     padding-top: 20px; /* Adds space above the About Me section */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+section.box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job {
+    margin-bottom: 2rem;
+}
+
+.job-date {
+    font-style: italic;
+}
+
+.skills-list {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation styling */
+nav ul {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center the items */
+    align-items: center; /* Center items vertically */
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Ensure no margin */
+    padding: 10px 0; /* Add 10px more padding above and below the buttons */
+    width: 100%; /* Ensure full width */
+}
+/* Style for the recipe links */
+main ul li a {
+    color: #333; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for emphasis */
+    background-color: #f4f4f4; /* Light background */
+    padding: 10px 15px; /* Add padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    display: block; /* Make the links block-level elements */
+    margin-bottom: 10px; /* Space between links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+main ul li a:hover {
+    background-color: #ffcc00; /* Yellow background on hover */
+    color: #000; /* Dark text on hover */
+}
+/* Remove bullet points and center the list */
+main ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center the list */
+}
+
+/* Center the list items and adjust spacing */
+main ul li {
+    display: inline-block; /* Make list items inline */
+    margin: 10px 0; /* Add space between items */
+}
+
+/* Style for the recipe links */
+main ul li a {
+    color: #333; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for emphasis */
+    background-color: #f4f4f4; /* Light background */
+    padding: 10px 15px; /* Add padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Make links inline */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+main ul li a:hover {
+    background-color: #ffcc00; /* Yellow background on hover */
+    color: #000; /* Dark text on hover */
+}
+
+/* Center the "Back" button in the navigation */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center the list */
+}
+
+/* Ensure the back button behaves similarly */
+nav ul li {
+    display: inline-block; /* Make list items inline */
+    margin: 10px 0; /* Space around the back button */
+}
+
+/* Style the "Back" button */
+nav ul li a {
+    color: #fff; /* White text for the back button */
+    background-color: #333; /* Dark background */
+    padding: 10px 15px; /* Add padding */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Darken the background on hover */
 }
