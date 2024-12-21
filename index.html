@@ -3,107 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nicolas Sanchez's portfolio and professional website">
+    <meta name="description" content="Explore fun and interactive projects by Nicolas Sanchez, including recipes, games, and cybersecurity insights.">
+    <meta name="keywords" content="Cybersecurity, Recipes, Games, Nicolas Sanchez, Projects">
     <link rel="stylesheet" href="/css/style.css">
     <title>Home</title>
-    <br>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e90ff, #ff69b4);
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .fun-fact {
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cybersecurity-image {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .news-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .news-links ul li {
+            margin: 10px 0;
+        }
+
+        .news-links ul li a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .news-links ul li a:hover {
+            color: #ff69b4;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Nicolas Sanchez, CC</h1>
-        <h2>Junior Information Security Administrator</h2>
+        <h1>Nicolas Sanchez</h1>
+        <h2>Welcome to My Website</h2>
         <nav>
-            <ul class="nav-menu">
-                
-                <li><a href="https://www.linkedin.com/in/nicolasjpsanchez" target="_blank">LinkedIn</a></li>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/nicolasjpsanchez" target="_blank" aria-label="LinkedIn profile">LinkedIn</a></li>
                 <li><a href="/pages/recipes.html">Recipes</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/games.html">Games</a></li>
             </ul>
         </nav>
     </header>
 
-    <br>
-
     <main>
-        <section class="box introduction">
+        <section class="box">
             <h2>About Me</h2>
-            <p>Hi, I'm Nicolas Sanchez, a Junior Information Security Administrator with a passion for problem-solving, dedication to continuous improvement, and a drive to make a positive impact.</p>
+            <p>Hi, I'm Nick, a Jr Information Security Administrator with a passion for problem-solving, continuous learning, and making a positive impact in the tech world. This site is primarily for reference and fun, showcasing what I can do and my interests!</p>
         </section>
 
-        <section class="box experience">
-            <h2>Professional Experience</h2>
+        <img src="/images/cybersecurity.avif" alt="Cybersecurity" class="cybersecurity-image">
 
-            <div class="job">
-                <h3>Junior Information Security Administrator</h3>
-                <p class="job-date">September 2024 - Present</p>
-                <ul>
-                    <li>Assist with security audits to identify vulnerabilities and ensure compliance with organizational policies and standards.</li>
-                    <li>Monitor system logs and alerts to detect and respond to security incidents in a timely manner.</li>
-                    <li>Manage and maintain endpoint protection solutions, ensuring all devices are secured and updated with the latest threat definitions.</li>
-                    <li>Collaborate with cross-functional teams to improve security protocols and educate staff on best practices.</li>
-                    <li>Participate in the development and implementation of security training programs for employees.</li>
-                </ul>
-            </div>
-            
-            <div class="job">
-                <h3>IT Help Desk Tier II</h3>
-                <p class="job-date">June 2024 - September 2024</p>
-                <ul>
-                    <li>Provided expert-level troubleshooting and technical support for hardware and software issues, ensuring minimal disruption to operations.</li>
-                    <li>Managed escalated support tickets through a ticketing system, prioritizing tasks and communicating effectively with end-users.</li>
-                    <li>Worked closely with other IT teams to resolve complex issues and improve overall service delivery.</li>
-                    <li>Documented processes and solutions to enhance the knowledge base and improve future support.</li>
-                </ul>
-            </div>
-            
-            <div class="job">
-                <h3>Retail Supervisor</h3>
-                <p class="job-date">January 2021 - September 2023</p>
-                <ul>
-                    <li>Managed daily operations of a high-traffic retail environment, ensuring customer satisfaction and adherence to company policies.</li>
-                    <li>Led a team of associates, providing training and mentorship to improve performance and promote career development.</li>
-                    <li>Analyzed sales data and customer feedback to identify trends and implement strategies for improvement.</li>
-                    <li>Developed and maintained relationships with customers to enhance loyalty and retention.</li>
-                </ul>
-            </div>
-            
-            <div class="job">
-                <h3>Apple Pro</h3>
-                <p class="job-date">September 2019 - September 2020</p>
-                <ul>
-                    <li>Specialized in providing technical support and guidance for Apple products, enhancing customer satisfaction through effective communication.</li>
-                    <li>Educated customers on product features and functionalities, resulting in increased sales and product adoption.</li>
-                    <li>Collaborated with team members to resolve customer inquiries, maintaining a high level of service in a fast-paced environment.</li>
-                    <li>Monitored and reported on common issues to improve product quality and customer support processes.</li>
-                </ul>
-            </div>
-            
-        </section>
-
-        <section class="box skills">
-            <h2>Skills and Certifications</h2>
-            <h3>Core Skills:</h3>
-            <ul class="skills-list">
-                <li>Threat Detection</li>
-                <li>Firewall Management</li>
-                <li>Network Troubleshooting</li>
-                <li>Active Directory</li>
-                <li>IT Help Desk Support (Tier I & II)</li>
-                <li>Multi-tasking</li>
-                <li>Ticketing Systems</li>
-            </ul>
-            <h3>Certifications:</h3>
-            <ul class="skills-list">
-                <li>Certified in Cybersecurity (ISC2)</li>
-                <li>Google IT Support Professional Certificate</li>
+        <section class="box news-links">
+            <h2>Top Cybersecurity News Sources</h2>
+            <ul>
+                <li><a href="https://www.cybersecurity-insiders.com/" target="_blank">Cybersecurity Insiders</a></li>
+                <li><a href="https://threatpost.com/" target="_blank">ThreatPost</a></li>
+                <li><a href="https://www.darkreading.com/" target="_blank">Dark Reading</a></li>
+                <li><a href="https://www.csoonline.com/" target="_blank">CSO Online</a></li>
+                <li><a href="https://www.securityweek.com/" target="_blank">SecurityWeek</a></li>
             </ul>
         </section>
+
+        <div class="quote">
+            "Technology is best when it brings people together." – Matt Mullenweg
+        </div>
+
+        <div class="fun-fact">
+            <h2>Fun Fact:</h2>
+            <p>Did you know? The first computer virus was created in 1986 and was called "Brain." It was harmless but spread to raise awareness about piracy!</p>
+        </div>
     </main>
 
     <footer>
-        <p>Copyright © nickcodedesigns, LLC 2024. All rights reserved.</p>
-<p><a href="/pages/sitemap.html">Sitemap</a></p>
-
+        <p>Copyright © <strong>nickcodedesigns, LLC 2024</strong>. All rights reserved.</p>
+        <p><a href="/pages/sitemap.html">Sitemap</a></p>
     </footer>
 </body>
 </html>

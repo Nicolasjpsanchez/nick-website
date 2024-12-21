@@ -2,55 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Classic Butter Chicken Recipe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A rich and flavorful butter chicken recipe served with basmati rice.">
+    <meta name="keywords" content="Butter Chicken, Indian Food, Curry, Recipe">
     <link rel="stylesheet" href="/css/style.css">
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YNFRL930LE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title>Classic Butter Chicken Recipe</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-  gtag('config', 'G-YNFRL930LE');
-</script>
+        main {
+            flex: 1;
+        }
+
+        .container {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .recipe-image {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .ingredients, .instructions {
+            margin: 20px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
 <body>
     <header>
-        <h6>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="/HTML/index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="HTML/Pages/recipes.html">Recipes</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </h6>
         <h1>Classic Butter Chicken with Basmati Rice</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/pages/recipes.html">Back</a></li>
+                <li><a href="/">Home</a></li>
+            </ul>
+            
+        </nav>
     </header>
 
-    <div class="container">
-        <section-recipe>
-            <h1>Ingredients</h1>
-            <h2>Chicken Marinade</h2>
-            <ul>
-                <li>16 oz Chicken Breast</li>
-                <li>6 tsp Plain Greek Yogurt</li>
-                <li>2 tsp Turmeric</li>
-                <li>2 tsp Chili Powder</li>
-                <li>2 tsp Kashmiri Chili Powder</li>
-                <li>4 tbsp Ginger Paste</li>
-                <li>4 tbsp Garlic Paste</li>
-            </ul>
-            <h2>Ingredients for the Curry</h2>
-            <ul>
-                <li>8 Roma Tomatoes, cubed</li>
-                <li>2 Yellow Onions, diced</li>
-                <li>2 tbsp Ginger Paste</li>
-                <li>2 tbsp Garam Masala</li>
-                <li>4 tsp Turmeric</li>
-                <li>2 tsp Cumin Seeds</li>
-                <li>2 tsp Chili Powder</li>
-                <li>2 tbsp Kashmiri Chili Powder</li>
-                <li>Salt
+    <main>
+        <div class="container">
+            <img src="/images/chicken.jpg" alt="Classic Butter Chicken" class="recipe-image">
+            <section class="ingredients">
+                <h2>Ingredients</h2>
+                <h3>Chicken Marinade</h3>
+                <ul>
+                    <li>16 oz Chicken Breast</li>
+                    <li>6 tsp Plain Greek Yogurt</li>
+                    <li>2 tsp Turmeric</li>
+                    <li>2 tsp Chili Powder</li>
+                    <li>2 tsp Kashmiri Chili Powder</li>
+                    <li>4 tbsp Ginger Paste</li>
+                    <li>4 tbsp Garlic Paste</li>
+                </ul>
+                <h3>Curry Ingredients</h3>
+                <ul>
+                    <li>8 Roma Tomatoes, cubed</li>
+                    <li>2 Yellow Onions, diced</li>
+                    <li>2 tbsp Ginger Paste</li>
+                    <li>2 tbsp Garam Masala</li>
+                    <li>4 tsp Turmeric</li>
+                    <li>2 tsp Cumin Seeds</li>
+                    <li>2 tsp Chili Powder</li>
+                    <li>2 tbsp Kashmiri Chili Powder</li>
+                    <li>Salt</li>
+                </ul>
+            </section>
+            <section class="instructions">
+                <h2>Instructions</h2>
+                <ol>
+                    <li>Marinate the chicken with yogurt, turmeric, chili powder, Kashmiri chili powder, ginger paste, and garlic paste for at least 30 minutes.</li>
+                    <li>Heat oil in a pan and sauté onions until golden brown.</li>
+                    <li>Add the ginger paste, garam masala, turmeric, cumin seeds, and chili powder. Stir until fragrant.</li>
+                    <li>Blend the tomatoes into a smooth paste and add them to the pan. Cook until the oil separates from the mixture.</li>
+                    <li>Add the marinated chicken and cook until fully cooked.</li>
+                    <li>Serve hot with basmati rice or naan bread. Enjoy!</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © <strong>nickcodedesigns, LLC 2024</strong>. All rights reserved.</p>
+        <p><a href="/pages/sitemap.html">Sitemap</a></p>
+    </footer>
+</body>
+</html>

@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitemap</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Adjusted to point to your CSS file -->
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNFRL930LE"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'G-YNFRL930LE');
+        gtag('config', 'G-YNFRL930LE');
     </script>
 </head>
 <body>
@@ -20,20 +20,34 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="../pages/recipes.html">Recipes</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <li><a href="../pages/sitemap.html">Sitemap</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h1>Sitemap</h1>
+        <p>Explore all the pages on this website:</p>
         <ul>
+            <!-- Main Pages -->
             <li><a href="../index.html">Home</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li> <!-- Add other pages here -->
+            <li><a href="../pages/recipes.html">Recipes</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+            <li><a href="../pages/sitemap.html">Sitemap</a></li>
+            <li><a href="../pages/about.html">About</a></li> <!-- Add 'About' page if it exists -->
+
+            <!-- Games Section -->
+            <li>Games
+                <ul>
+                    <li><a href="../pages/games/pong.html">Pong</a></li>
+                    <li><a href="../pages/games/tetris.html">Tetris</a></li>
+                    <li><a href="../pages/games/snake.html">Snake</a></li>
+                    <li><a href="../pages/games/breakout.html">Breakout</a></li>
+                    <li><a href="../pages/games/coming-soon.html">More Games Coming Soon</a></li>
+                </ul>
+            </li>
         </ul>
     </main>
 

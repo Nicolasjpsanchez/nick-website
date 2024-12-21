@@ -1,340 +1,182 @@
-/* Basic reset for margins and padding */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Universal Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4; /* Set the body background color */
     color: #333;
-    min-height: 100vh;
+    background: linear-gradient(135deg, #1e90ff, #ff69b4);
     display: flex;
     flex-direction: column;
-    background-image: url('/images/background.png'); /* Background image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
-/* Navigation styling */
-nav {
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center; /* Center the nav items */
-    margin-bottom: 20px; /* Add space below the nav */
-}
-
-nav ul {
-    display: flex; /* Use Flexbox for layout */
-    justify-content: center; /* Center the items */
-    align-items: center; /* Center items vertically */
-    list-style-type: none; /* Remove bullet points */
-    margin: 0; /* Ensure no margin */
-    padding: 10px 0; /* Added vertical padding for aesthetics */
-    width: 100%; /* Ensure full width */
-}
-
-nav ul li {
-    margin: 0 5px; /* Reduce space between links */
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 2px 8px; /* Reduced padding for smaller buttons */
-    font-weight: bold;
-    display: block; /* Make links block elements */
-    transition: background-color 0.3s;
-    font-size: 14px; /* Set font size */
-}
-
-nav ul li a:hover {
-    background-color: #555; /* Change background on hover */
-    border-radius: 5px; /* Rounded corners */
-}
-
-/* Header styling */
-header {
-    background-color: rgba(51, 51, 51, 0.8);
-    color: #fff;
-    padding: 20px 30px; /* Adjust padding for more space around the text */
+header, footer {
     text-align: center;
-    position: relative; /* Ensure stacking context */
-    z-index: 1; /* Keep above the background */
-    margin-top: 60px; /* Create space for the fixed nav */
-    border-radius: 15px; /* Add rounded corners */
-    max-width: 500px; /* Set a maximum width */
-    margin-left: auto; /* Center the header */
-    margin-right: auto; /* Center the header */
-}
-
-/* Main content styling */
-main {
-    flex: 1;
     padding: 20px;
-    max-width: 900px;
-    margin: 0 auto; /* Center the main content */
-    background-color: rgba(255, 255, 255, 0.9); /* White background for main content */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 10px 0; /* Adjust padding for the footer */
-    background-color: rgba(51, 51, 51, 0.8);
-    color: white;
-    width: 100%;
-    margin-top: 20px; /* Space above the footer */
-}
-
-/* Style for footer links */
-footer a {
-    color: #ffcc00; /* Link color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
-    padding: 5px 5px; /* Padding around the link */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-footer a:hover {
-    background-color: rgba(255, 204, 0, 0.2); /* Light background on hover */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    nav ul {
-        justify-content: center; /* Center items for smaller screens */
-        flex-wrap: wrap; /* Allow items to wrap */
-    }
-}
-
-/* General text styling */
-h1, h2, h3, p {
-    margin-bottom: 20px; /* Add space below headers and paragraphs */
-    line-height: 1.5; /* Improve readability */
-}
-
-/* Improve button aesthetics */
-nav a {
-    margin: 0 5px; /* Decrease space between links */
-    padding: 8px 12px; /* Adjust padding for better appearance */
-    font-size: 1em; /* Standardize font size */
-    background-color: #444; /* Dark background for buttons */
-    color: #fff; /* White text */
-    border-radius: 4px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth transition */
-}
-
-nav a:hover {
-    background-color: #666; /* Lighten on hover */
-}
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family */
-    line-height: 1.6; /* Line height for readability */
-    color: #333; /* Text color */
-    font-size: 16px; /* Base font size */
-}
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-main {
-    font-size: 16px; /* Override for main content if needed */
-}
-/* Assuming your title box has a class of .title-box */
-.title-box {
-    margin-bottom: 20px; /* Adjust this value for more or less space */
-}
-
-/* Alternatively, if you want to add margin to the About Me section */
-.about-me {
-    margin-top: 30px; /* Adjust this value for more or less space */
-}
-.about-me {
-    padding-top: 20px; /* Adds space above the About Me section */
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
+    background: rgba(51, 51, 51, 0.8);
     color: #fff;
-    padding: 1rem;
-    text-align: center;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 800px;
 }
 
-h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-h2 {
-    margin-top: 1.5rem;
-    font-size: 1.8rem;
-}
-
+/* Navigation */
 nav ul {
-    list-style-type: none;
-    padding: 0;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    list-style: none;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 nav ul li {
-    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffcc00;
 }
 
+/* Main Content */
 main {
-    padding: 2rem;
+    flex: 1;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
-section.box {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+.box, .quote, .fun-fact {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.job {
-    margin-bottom: 2rem;
+.box {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.job-date {
+.quote {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
     font-style: italic;
 }
 
-.skills-list {
-    list-style-type: square;
-    padding-left: 1.5rem;
+.fun-fact {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 1.1rem;
 }
 
+/* Footer */
 footer {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    header {
+        margin-top: 80px;
+    }
+
+    .quote, .fun-fact {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+/* Footer */
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    position: relative;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 0;
 }
 
 footer a {
-    color: #fff;
+    color: #1e90ff; /* Match link color with the rest of the site */
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #ffcc00; /* Highlight link on hover */
 }
 
-/* Navigation styling */
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background-color: rgba(51, 51, 51, 0.8);
+    margin-top: 60px; /* For fixed nav spacing */
+    border-radius: 15px;
+    max-width: 900px; /* Limit width */
+    margin: 60px auto 20px; /* Center header with margins */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Footer */
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px 20px; /* Add horizontal padding */
+    margin-top: 20px;
+    border-radius: 10px; /* Rounded edges */
+    max-width: 900px; /* Limit width */
+    margin: 20px auto; /* Center footer with margins */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Navigation Bar */
 nav ul {
-    display: flex; /* Use Flexbox for layout */
-    justify-content: center; /* Center the items */
-    align-items: center; /* Center items vertically */
-    list-style-type: none; /* Remove bullet points */
-    margin: 0; /* Ensure no margin */
-    padding: 10px 0; /* Add 10px more padding above and below the buttons */
-    width: 100%; /* Ensure full width */
-}
-/* Style for the recipe links */
-main ul li a {
-    color: #333; /* Default link color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text for emphasis */
-    background-color: #f4f4f4; /* Light background */
-    padding: 10px 15px; /* Add padding for spacing */
-    border-radius: 5px; /* Rounded corners */
-    display: block; /* Make the links block-level elements */
-    margin-bottom: 10px; /* Space between links */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    list-style: none;
+    margin: 0;
+    padding: 10px 0; /* Add padding above and below the nav bar */
+    background: transparent; /* Remove extra background layer */
+    gap: 15px; /* Add spacing between navigation buttons */
 }
 
-main ul li a:hover {
-    background-color: #ffcc00; /* Yellow background on hover */
-    color: #000; /* Dark text on hover */
-}
-/* Remove bullet points and center the list */
-main ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    text-align: center; /* Center the list */
+.button-container {
+    display: flex;
+    justify-content: space-around; /* Distributes buttons with space in between */
+    gap: 10px; /* Adds spacing between the buttons */
+    margin-top: 20px; /* Adds spacing from the title */
 }
 
-/* Center the list items and adjust spacing */
-main ul li {
-    display: inline-block; /* Make list items inline */
-    margin: 10px 0; /* Add space between items */
+.button-container a {
+    flex: 1; /* Makes buttons equally wide */
+    text-align: center;
 }
 
-/* Style for the recipe links */
-main ul li a {
-    color: #333; /* Default link color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text for emphasis */
-    background-color: #f4f4f4; /* Light background */
-    padding: 10px 15px; /* Add padding for spacing */
-    border-radius: 5px; /* Rounded corners */
-    display: inline-block; /* Make links inline */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-}
-
-main ul li a:hover {
-    background-color: #ffcc00; /* Yellow background on hover */
-    color: #000; /* Dark text on hover */
-}
-
-/* Center the "Back" button in the navigation */
-nav ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    text-align: center; /* Center the list */
-}
-
-/* Ensure the back button behaves similarly */
-nav ul li {
-    display: inline-block; /* Make list items inline */
-    margin: 10px 0; /* Space around the back button */
-}
-
-/* Style the "Back" button */
-nav ul li a {
-    color: #fff; /* White text for the back button */
-    background-color: #333; /* Dark background */
-    padding: 10px 15px; /* Add padding */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-nav ul li a:hover {
-    background-color: #555; /* Darken the background on hover */
-}
