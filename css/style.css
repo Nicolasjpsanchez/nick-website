@@ -371,3 +371,24 @@ body.recipes-page {
     text-align: left;
     line-height: 1.8; /* Slightly increase line height for readability */
 }
+.boxed-text {
+    background-color: #fff; /* Adjust the background color as needed */
+    padding: 20px; /* Adds space inside the box */
+    border-radius: 25px; /* Makes the corners very rounded */
+    display: inline-block; /* Keeps the box size compact around the text */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  }
+  .boxed-text h1 {
+    color: #333; /* Change this to a darker color or any color that contrasts with the background */
+    font-size: 2rem; /* Adjust the size if needed */
+    margin: 0; /* Removes extra spacing around the text */
+}
+
+.boxed-text {
+    background-color: #fff; /* Keeps the box background white */
+    padding: 20px;
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
