@@ -10,33 +10,58 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #1e90ff, #ff69b4);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/* Page-Specific Backgrounds */
+body.index-page {
+    background: linear-gradient(135deg, #1e90ff, #ff69b4);
+}
+
+body.recipes-page {
+    background: linear-gradient(135deg, #ff7f50, #ff6347);
+}
+
+/* Header and Footer */
 header, footer {
     text-align: center;
     padding: 20px;
-    background: rgba(51, 51, 51, 0.8);
     color: #fff;
+    background: rgba(51, 51, 51, 0.8);
     border-radius: 10px;
     margin: 10px auto;
-    max-width: 800px;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Navigation */
+footer {
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+/* Navigation Bar */
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-nav ul li {
-    margin: 0 15px;
+    padding: 10px 0;
+    gap: 15px;
 }
 
 nav ul li a {
@@ -54,10 +79,14 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
+nav ul li a:focus {
+    outline: 2px solid #ffcc00;
+}
+
 /* Main Content */
 main {
     flex: 1;
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
 }
@@ -87,10 +116,50 @@ main {
     font-size: 1.1rem;
 }
 
-/* Footer */
-footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 15px 0;
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.recipe h3 {
+    margin-top: 0;
+}
+
+.recipe a {
+    text-decoration: none;
+    color: #ff6347;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.recipe a:hover {
+    color: #ff4500;
+}
+
+/* Centered Buttons */
+.centered-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 /* Responsive Design */
@@ -99,84 +168,23 @@ footer {
         flex-wrap: wrap;
     }
 
-    header {
-        margin-top: 80px;
-    }
-
     .quote, .fun-fact {
         padding: 10px;
         font-size: 1rem;
     }
 }
-/* Footer */
-footer {
-    background-color: rgba(51, 51, 51, 0.8);
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-}
 
-footer p {
-    margin: 0;
-}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-footer a {
-    color: #1e90ff; /* Match link color with the rest of the site */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
+    .recipe {
+        width: 100%;
+    }
 
-footer a:hover {
-    color: #ffcc00; /* Highlight link on hover */
+    main {
+        padding: 10px;
+    }
 }
-
-/* Header */
-header {
-    text-align: center;
-    padding: 20px;
-    color: #fff;
-    background-color: rgba(51, 51, 51, 0.8);
-    margin-top: 60px; /* For fixed nav spacing */
-    border-radius: 15px;
-    max-width: 900px; /* Limit width */
-    margin: 60px auto 20px; /* Center header with margins */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-}
-
-/* Footer */
-footer {
-    background-color: rgba(51, 51, 51, 0.8);
-    color: white;
-    text-align: center;
-    padding: 15px 20px; /* Add horizontal padding */
-    margin-top: 20px;
-    border-radius: 10px; /* Rounded edges */
-    max-width: 900px; /* Limit width */
-    margin: 20px auto; /* Center footer with margins */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-}
-
-/* Navigation Bar */
-nav ul {
-    display: flex;
-    justify-content: center; /* Center the navigation links */
-    list-style: none;
-    margin: 0;
-    padding: 10px 0; /* Add padding above and below the nav bar */
-    background: transparent; /* Remove extra background layer */
-    gap: 15px; /* Add spacing between navigation buttons */
-}
-
-.button-container {
-    display: flex;
-    justify-content: space-around; /* Distributes buttons with space in between */
-    gap: 10px; /* Adds spacing between the buttons */
-    margin-top: 20px; /* Adds spacing from the title */
-}
-
-.button-container a {
-    flex: 1; /* Makes buttons equally wide */
-    text-align: center;
-}
-
