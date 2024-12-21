@@ -350,3 +350,24 @@ body.recipes-page {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     text-align: left; /* Default left-aligned text */
 }
+.container {
+    background: #ffffff; /* Solid white background */
+    color: #333; /* Dark text for readability */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left;
+}
+.container {
+    background: #ffffff; /* Solid white background */
+    color: #333; /* Dark text for readability */
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left;
+    line-height: 1.8; /* Slightly increase line height for readability */
+}
