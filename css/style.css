@@ -259,3 +259,107 @@ body.index-page {
     color: #333;
     line-height: 1.6;
 }
+body.contact-page {
+    background: url('/images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Contact Page */
+.contact-page {
+    background: url('/images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds spacing between form elements */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px; /* Adds spacing between label and input */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none; /* Prevent resizing for better aesthetics */
+}
+
+button {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff69b4;
+}
+
+/* Form Container */
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: left; /* Aligns text and form elements properly */
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e90ff;
+}
+
+/* Sitemap Page Specific */
+.sitemap-page {
+    background: url('/images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Sitemap List */
+.sitemap-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.sitemap-list li {
+    margin: 10px 0;
+}
+
+.sitemap-list a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sitemap-list a:hover {
+    color: #ff69b4;
+}
+

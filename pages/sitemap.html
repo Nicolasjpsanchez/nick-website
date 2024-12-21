@@ -3,57 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the sitemap for Nicolas Sanchez's website.">
     <title>Sitemap</title>
-    <link rel="stylesheet" href="../css/style.css"> <!-- Adjusted to point to your CSS file -->
+    <link rel="stylesheet" href="/css/style.css">
 
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNFRL930LE"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-YNFRL930LE');
     </script>
 </head>
-<body>
+<body class="sitemap-page">
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/recipes.html">Recipes</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/sitemap.html" class="active">Sitemap</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/recipes.html">Recipes</a></li>
-                <li><a href="../pages/contact.html">Contact</a></li>
-                <li><a href="../pages/sitemap.html">Sitemap</a></li>
-            </ul>
-        </nav>
+        <h1>Sitemap</h1>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <h1>Sitemap</h1>
-        <p>Explore all the pages on this website:</p>
-        <ul>
-            <!-- Main Pages -->
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/recipes.html">Recipes</a></li>
-            <li><a href="../pages/contact.html">Contact</a></li>
-            <li><a href="../pages/sitemap.html">Sitemap</a></li>
-            <li><a href="../pages/about.html">About</a></li> <!-- Add 'About' page if it exists -->
-
-            <!-- Games Section -->
-            <li>Games
-                <ul>
-                    <li><a href="../pages/games/pong.html">Pong</a></li>
-                    <li><a href="../pages/games/tetris.html">Tetris</a></li>
-                    <li><a href="../pages/games/snake.html">Snake</a></li>
-                    <li><a href="../pages/games/breakout.html">Breakout</a></li>
-                    <li><a href="../pages/games/coming-soon.html">More Games Coming Soon</a></li>
-                </ul>
-            </li>
-        </ul>
+        <div class="container">
+            <h2>Explore All Pages</h2>
+            <ul class="sitemap-list">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/recipes.html">Recipes</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/sitemap.html">Sitemap</a></li>
+            </ul>
+        </div>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>Copyright © nickcodedesigns, LLC 2024. All rights reserved.</p>
-        <p><a href="sitemap.html">Sitemap</a></p>
+        <p>Copyright © <strong>nickcodedesigns, LLC 2024</strong>. All rights reserved.</p>
+        <p><a href="/pages/sitemap.html">Sitemap</a></p>
     </footer>
 </body>
 </html>
