@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Nicolas Sanchez">
-    <meta name="keywords" content="Contact, Nicolas Sanchez, Feedback, Questions">
-    <title>Contact Nicolas Sanchez</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNFRL930LE"></script>
     <script>
@@ -15,53 +16,150 @@
         gtag('js', new Date());
         gtag('config', 'G-YNFRL930LE');
     </script>
-</head>
-<body class="contact-page">
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/pages/recipes.html">Recipes</a></li>
-            <li><a href="/pages/contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Header -->
     <header>
-        <h1>Contact Nicolas Sanchez</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                
+            </ul>
+        </nav>
     </header>
 
-    <!-- Contact Form -->
-    <main>
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p>If you have questions, feedback, or just want to say hello, feel free to send me a message. I'd love to hear from you!</p>
-            <form id="contactForm" action="mailto:admin@nicolasjpsanchez.com" method="POST" enctype="text/plain">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
 
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
 
-                <div class="form-group">
-                    <label for="message">Your Message:</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
-                </div>
+    <div class="contact-container">
+        <h2>Get in Touch</h2>
+        <p>If you have questions, feedback, or just want to say hello, feel free to send me a message. I'd love to hear from you!</p>
+        <form id="contactForm" action="mailto:admin@nicolasjpsanchez.com" method="POST" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </main>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-    <!-- Footer -->
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+
     <footer>
         <p>Copyright © <strong>nickcodedesigns, LLC 2024</strong>. All rights reserved.</p>
         <p><a href="/pages/sitemap.html">Sitemap</a></p>
     </footer>
+
+    <style>
+        /* Page Specific Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e90ff, #ff69b4);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            margin: 0;
+            color: #ffcc00;
+            font-size: 2rem;
+        }
+
+        .contact-container {
+            margin: 50px auto;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+
+        .contact-container h2 {
+            text-align: center;
+            color: #1e90ff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #1e90ff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff69b4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin: 20px auto;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            background: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+    </style>
 </body>
 </html>
