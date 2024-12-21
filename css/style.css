@@ -208,7 +208,7 @@ footer a:hover {
 .recipe-image {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 100px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     margin: 30px auto; /* Centers the image horizontally */
     display: block; /* Ensures the image is treated as a block element */
@@ -250,7 +250,7 @@ body.recipes-page {
 .recipe-image {
     max-width: 90%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 100px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     margin: 30px auto; /* Center the image horizontally */
     display: block; /* Ensure it's a block element for centering */
