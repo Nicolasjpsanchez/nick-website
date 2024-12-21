@@ -1,4 +1,4 @@
-# Nicolas J.P. Sanchez Website
+# nicolasjpsanchez.com
 
 Welcome to the official repository of my personal website, [nicolasjpsanchez.com](https://nicolasjpsanchez.com). This repository contains the source code and assets for the website. It includes various pages, styles, and scripts for displaying my portfolio, contact information, blog posts, and more.
 
