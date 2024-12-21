@@ -25,3 +25,4 @@ The site is built using HTML, CSS, and JavaScript for front-end functionality. I
 ## Repository Structure
 
 Test commit
+Force branch visibility update
