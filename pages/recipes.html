@@ -6,150 +6,60 @@
     <meta name="description" content="Explore delicious recipes curated by Nicolas Sanchez">
     <meta name="keywords" content="Recipes, Cooking, Food">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Recipes</title>
-    <style>
-        body {
-            background: linear-gradient(135deg, #ff7f50, #ff6347);
-            color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        main {
-            flex: 1;
-        }
-
-        .box {
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 800px;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .recipe-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .recipe {
-            background: rgba(255, 255, 255, 0.8);
-            color: #333;
-            padding: 15px;
-            border-radius: 8px;
-            width: 300px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .recipe:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .recipe h3 {
-            margin-top: 0;
-        }
-
-        .recipe a {
-            text-decoration: none;
-            color: #ff6347;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .recipe a:hover {
-            color: #ff4500;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.6);
-        }
-
-        footer p {
-            margin: 5px 0;
-        }
-
-        footer a {
-            color: #1e90ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer a:hover {
-            color: #ff69b4;
-        }
-    </style>
+    <title>My Recipes</title>
 </head>
 <body class="recipes-page">
-
     <header>
         <h1>My Recipes</h1>
         <nav>
-            <ul class="nav-menu">
-                <li><a href="https://www.linkedin.com/in/nicolasjpsanchez" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <ul>
                 <li><a href="/">Home</a></li>
+                <li><a href="https://www.linkedin.com/in/nicolasjpsanchez" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                 <li><a href="/pages/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
 
     <main>
         <section class="box">
             <h2>Explore Delicious Recipes</h2>
             <p>Welcome to my collection of recipes! Click on a recipe to view the full instructions and ingredients.</p>
-            <div class="recipe-list">
-                <div class="recipe">
-                    <h3><a href="/pages/Recipes/butter_chicken.html">Butter Chicken</a>
-                    </h3>
-                    <p>A creamy and flavorful Indian classic that's perfect for any occasion.</p>
-                </div>
-                <div class="recipe">
-                    <h3><a href="/pages/recipes/chocolate_chip_cookies.html">Chocolate Chip Cookies</a></h3>
-                    <p>Chewy, gooey, and filled with rich chocolate goodness.</p>
-                </div>
-                <div class="recipe">
-                    <h3><a href="/pages/recipes/mississippi_pancakes.html">Mississippi Pancakes</a></h3>
-                    <p>Fluffy pancakes with a southern twist.</p>
-                </div>
-                <div class="recipe">
-                    <h3><a href="/pages/recipes/skillet_flat_bread.html">Skillet Flatbread</a></h3>
-                    <p>Simple and versatile flatbread made right on the stove.</p>
-                </div>
-                <div class="recipe">
-                    <h3><a href="/pages/recipes/snowball_cookies.html">Snowball Cookies</a></h3>
-                    <p>Delightful, buttery cookies dusted with powdered sugar.</p>
-                </div>
-                <div class="recipe">
-                    <h3><a href="/pages/recipes/spicy_mule.html">Spicy Pomegranate Moscow Mule</a></h3>
-                    <p>A refreshing cocktail with a spicy and tangy twist.</p>
-                </div>
-                <div class="recipe">
-                    <h3><a href="/pages/recipes/shortbread.html">Orange, Pistachio, and Chocolate Shortbread</a></h3>
-                    <p>A delightful mix of orange, pistachio, and chocolate in buttery shortbread cookies.</p>
-                </div>
+        </section>
+
+        <section class="recipe-list">
+            <div class="recipe">
+                <h3><a href="/pages/recipes/butter_chicken.html">Butter Chicken</a></h3>
+                <p>A creamy and flavorful Indian classic that's perfect for any occasion.</p>
+            </div>
+            <div class="recipe">
+                <h3><a href="/pages/recipes/chocolate_chip_cookies.html">Chocolate Chip Cookies</a></h3>
+                <p>Chewy, gooey, and filled with rich chocolate goodness.</p>
+            </div>
+            <div class="recipe">
+                <h3><a href="/pages/recipes/mississippi_pancakes.html">Mississippi Pancakes</a></h3>
+                <p>Fluffy pancakes with a southern twist.</p>
+            </div>
+            <div class="recipe">
+                <h3><a href="/pages/recipes/skillet_flatbread.html">Skillet Flatbread</a></h3>
+                <p>Simple and versatile flatbread made right on the stove.</p>
+            </div>
+            <div class="recipe">
+                <h3><a href="/pages/recipes/snowball_cookies.html">Snowball Cookies</a></h3>
+                <p>Delightful, buttery cookies dusted with powdered sugar.</p>
+            </div>
+            <div class="recipe">
+                <h3><a href="/pages/recipes/spicy_mule.html">Spicy Pomegranate Moscow Mule</a></h3>
+                <p>A refreshing cocktail with a spicy and tangy twist.</p>
+            </div>
+            <div class="recipe">
+                <h3><a href="/pages/recipes/shortbread.html">Orange, Pistachio, and Chocolate Shortbread</a></h3>
+                <p>A delightful mix of orange, pistachio, and chocolate in buttery shortbread cookies.</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>
-            Copyright © <strong>nickcodedesigns, LLC 2024</strong>. All rights reserved.
-        </p>
+        <p>Copyright © <strong>nickcodedesigns, LLC 2024</strong>. All rights reserved.</p>
         <p><a href="/pages/sitemap.html">Sitemap</a></p>
     </footer>
 </body>

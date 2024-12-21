@@ -15,102 +15,55 @@
     <meta name="keywords" content="Mississippi Pancakes, Pancake Recipe, Breakfast, Brunch">
     <link rel="stylesheet" href="/css/style.css">
     <title>Mississippi Pancakes Recipe</title>
-    <style>
-        body {
-            background: linear-gradient(135deg, #ffe4b5, #ff8c00);
-            color: #333;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        main {
-            flex: 1;
-        }
-
-        .container {
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 800px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            color: #333;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center; /* Center content inside the container */
-        }
-
-        .recipe-image {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            margin: 20px auto; /* Center the image horizontally */
-            display: block; /* Ensure it's treated as a block-level element */
-        }
-
-        h1, h2 {
-            text-align: center;
-        }
-
-        ul, ol {
-            margin: 0 20px;
-            padding-left: 20px;
-            text-align: left; /* Keep lists left-aligned */
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: #fff;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
 </head>
-<body>
-    <header>
-        <h1>Mississippi Pancakes Recipe</h1>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="/pages/recipes.html">Back</a></li>
-                <li><a href="/">Home</a></li>
-            </ul>
-        </nav>
+<body class="recipes-page">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/pages/recipes.html">Back to Recipes</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="recipe-header">
+        <h1>Mississippi Pancakes</h1>
     </header>
 
-    <main class="container">
-        <img src="/images/pancakes.webp" alt="Mississippi Pancakes" class="recipe-image">
-        <div class="ingredients">
-            <h2>Ingredients</h2>
-            <ul>
-                <li>2 eggs</li>
-                <li>1 cup milk</li>
-                <li>2 tablespoons vegetable oil</li>
-                <li>3 tablespoons butter, melted</li>
-                <li>1 1/4 cup flour</li>
-                <li>3 teaspoons baking powder</li>
-                <li>3 teaspoons sugar</li>
-                <li>1/2 teaspoon salt</li>
-            </ul>
-        </div>
-        <div class="directions">
-            <h2>Directions</h2>
-            <ol>
-                <li>Heat nonstick griddle over medium heat.</li>
-                <li>In a bowl, beat eggs until light and foamy. Add milk, oil, and melted butter.</li>
-                <li>In another bowl, sift together flour, baking powder, sugar, and salt. Beat dry ingredients into the liquid ingredients with a wire whisk until smooth.</li>
-                <li>When the griddle is hot, pour about 1/4 cup of batter for each pancake.</li>
-                <li>Cook until bubbles form on the surface of the pancake and the edges start to look set, about 1-2 minutes. Flip and cook until golden brown on the other side.</li>
-                <li>Serve hot with your favorite toppings.</li>
-            </ol>
-        </div>
+    <!-- Main Content -->
+    <main>
+        <article class="container">
+            <img src="/images/pancakes.webp" alt="A stack of fluffy Mississippi pancakes" class="recipe-image">
+            <section class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 eggs</li>
+                    <li>1 cup milk</li>
+                    <li>2 tablespoons vegetable oil</li>
+                    <li>3 tablespoons butter, melted</li>
+                    <li>1 1/4 cup flour</li>
+                    <li>3 teaspoons baking powder</li>
+                    <li>3 teaspoons sugar</li>
+                    <li>1/2 teaspoon salt</li>
+                </ul>
+            </section>
+            <section class="directions">
+                <h2>Directions</h2>
+                <ol>
+                    <li>Heat nonstick griddle over medium heat.</li>
+                    <li>In a bowl, beat eggs until light and foamy. Add milk, oil, and melted butter.</li>
+                    <li>In another bowl, sift together flour, baking powder, sugar, and salt. Beat dry ingredients into the liquid ingredients with a wire whisk until smooth.</li>
+                    <li>When the griddle is hot, pour about 1/4 cup of batter for each pancake.</li>
+                    <li>Cook until bubbles form on the surface of the pancake and the edges start to look set, about 1-2 minutes. Flip and cook until golden brown on the other side.</li>
+                    <li>Serve hot with your favorite toppings.</li>
+                </ol>
+            </section>
+        </article>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>Copyright © <strong>nickcodedesigns, LLC 2024</strong>. All rights reserved.</p>
         <p><a href="/pages/sitemap.html">Sitemap</a></p>
